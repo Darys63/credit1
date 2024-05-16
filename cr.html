@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>credit</title>
+  <style>
+    body, p, h1, h2, h3, .news-meta {
+      margin: 0;
+      padding: 0;
+      background-color: #f3f6ed;
+    }
+    container {
+      display: grid;
+      grid-template-areas:
+        'header header'
+        'hero hero'
+        'news news';
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .read-more {
+        background: #e3ead7;
+        border-style: none;
+        border-radius: 10px;
+    }
+    .header-contacts {
+        font-size: 16px;
+        text-color: white;
+    }
+    footer {
+        background-color: #657e3e;
+        padding: 20px;
+        font-size: 25px;
+        color: white;
+        }
+    header {
+      grid-area: header;
+      display: block;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background: url('ma.jpg') no-repeat ;
+      background-size: 100%;
+      height: 800px;
+      align-text: center;
+      font-size: 40;
+
+    }
+    .hero {
+      grid-area: hero;
+      background-size: cover;
+      padding: 20px;
+      color: #black;
+      grid-template-columns: 1fr;
+    }
+    .logo {
+      font-size: 24px;
+    }
+    nav {
+      display: flex;
+      gap: 10px;
+      color: green;
+      align-items: center;
+      
+    }
+    .fig {
+    float: left;
+    padding-right: 10px; 
+    padding-left: 10px;
+    padding-bottom: 10px; 
+    }
+    nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: #76914C;
+            border-radius: 10px;
+        }
+    .texts {
+        font-size: 90px;
+        font-weight: bold;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: white;
+    }
+    .news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    }
+    .news-item {
+      padding: 10px;
+    }
+    .news-thumbnail {
+      width: 350px;
+      height: auto;
+    }
+    .news-meta {
+      color: #666;
+      font-size: 14px;
+    }
+    .excerpt {
+       background-color: white;
+          margin: 5px ;
+        }
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          'header'
+          'hero'
+          'news';
+      }
+      .news {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      nav {
+        flex-direction: column;
+      }
+      .news {
+        grid-template-columns: 1fr 1fr  1fr;
+      }
+      .excerpt {
+        display: block;
+      }
+  </style>
+</head>
+
+<div class="container">
+  <header>
+    <nav>
+    <div class="logo"><img height="140" src="log.png" alt="logo" ></div>
+    <p ><input type="search" name="q" placeholder="Site search"> 
+   <input type="submit" value="search"></p>
+   <div class="nav">
+   <a href="#">Home</a>
+   <a href="#">About company</a>
+   <a href="#">Services</a>
+   <a href="#">Product catalog</a>
+   <a href="#">Projects</a>
+   <a href="#">Contact</a>
+   </div> 
+   </nav>
+    
+    <div class="texts" >AGROVITA</div>
+    <div class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi.</div>
+  </header>
+</div>
+<body>
+ <section class="fig">
+ <p>
+  <div class="h"><h1>About the company CHTUP "Agrovitaservice"</h1></div>
+  <img src="co.jpg" width="400" height="200" alt="Èëëþñòðàöèÿ" class="fig">
+  <big>CHTUP "Agrovitaservice" is a company offering the latest technological solutions for successful dairy farming in the Republic of Belarus and the CIS countries. For our clients, we offer only the best, proven and proven technologies and equipment from Western Europe and America.</p><p> Among our products are milking machines, milking parlors, equipment and equipment for farms, nipple rubber, livestock mats and much more in the product catalog.<big></p> 
+  <button class="read-more">Read More</button>
+  </section>
+  </div>
+</div>
+<p><dd>Our team of specialists has accumulated extensive experience in the areas of milking, cooling and storage of milk, ventilation, watering, comfort of keeping cattle, technologies for cleaning, transportation, homogenization, separation and storage of manure. We are confident that only innovation will allow agricultural enterprises to obtain milk of only the highest quality and achieve the most effective economic indicators.</dd></p>
+<p><dd>We offer turnkey construction of dairy complexes, modernization and re-equipment of existing dairy farms. We provide full technical and consulting support for the optimal design of MTC for the Customer’s needs, we are actively engaged in the supply of spare parts, installation, commissioning and service work.</dd></p>
+<dd><h1>News</h1></dd>
+    <section class="news">
+        <div class="news-item">
+            <img src="ch.jpg" width="350"  alt="News Thumbnail">
+            <h2>Vestibulum sed ipsum primis in faucibus orci</h2>
+            <p class="meta-info">10.11.2011</p>
+            <p class="excerpt">Nunc pellentesque tristique solliatudin., Vestbulur arite ipsum primis in faudibus ora luctus et ultrices posuere cubilia Curae; Aenean eu...</p>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <div class="news-item">
+            <img src="na.jpg" width="350" height="225" alt="News Thumbnail">
+            <h2>Phasellus purus orci, rhoncus edget tincidunt</h2>
+            <p class="meta-info">10.11.2011</p>
+            <p class="excerpt">Spring has come to the city. The trees are in bloom, the birds are singing on the branches. People enjoy the warmth and the sun. Summer is coming soon, the time for vacations and vacations.</p>
+            <button class="read-more">Read More</button>
+        </div>
+    </section>
+    <footer>
+			<div class="header-contacts">
+<div>Phone.<a href="tel:+375172134350">+375 (17) 213 43 50</a>,<a href="tel:+375172134450">+375 (17) 213 44 50</a></span></div>
+
+<div>MTC, Viber,&nbsp;WhatsApp</span> <a href="tel:+375333443635">+375 (33) 344 36 35</a>,<a href="tel:+375333443634">+375 (33) 344 36 34</a></span></div>
+
+<div>A1, Viber, WhatsApp<a href="tel:+375291992535">+375 (29) 199 75 00</a>, <a href="tel:+375291990035">+375 (29) 199 00 35&nbsp;</a></span></div>
+
+<div>Email: <a class="headerLink" href="mailto:info@agrovita.by">info@agrovita.by</a></span></div>
+
+		</div>
+    </footer>
+</body>
+</html>
